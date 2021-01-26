@@ -1,0 +1,718 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>FarmSyst | Radocc</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="assets/img/favicon.webp">
+
+    <!-- ***** All CSS Files ***** -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script>
+        function abrirModal(){
+            var modal = document.getElementById("myModal");
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            modal.style.display = "block";
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="homepage-2">
+    <!--====== Preloader Area Start ======-->
+    <div class="preloader-main">
+        <div class="preloader-wapper">
+            <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="600" height="200">
+                <defs>
+                    <filter id="goo" x="-40%" y="-40%" height="200%" width="400%">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
+                    </filter>
+                </defs>
+                <g filter="url(#goo)">
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#F26419" />
+                    <circle class="dot" cx="50" cy="50" r="25" fill="#F26419" />
+                </g>
+            </svg>
+            <div>
+                <div class="loader-section section-left"></div>
+                <div class="loader-section section-right"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== Scroll To Top Area Start ======-->
+    <div id="scrollUp" title="Scroll To Top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    <!--====== Scroll To Top Area End ======-->
+
+    <div class="main">
+        <!-- ***** Header Start ***** -->
+        <header class="navbar navbar-sticky navbar-expand-lg navbar-dark">
+            <div class="container position-relative">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-regular mini-logo" src="assets/img/logo/logo-vprime-white.webp" alt="brand-logo">
+                    <img class="navbar-brand-sticky mini-logo" src="assets/img/logo/logo-vprime.webp" alt="sticky brand-logo">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-inner">
+                    <!--  Mobile Menu Toggler -->
+                    <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <nav>
+                        <ul class="navbar-nav" id="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#home">
+                                    Início
+                                </a> 
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#features">Recursos</a>
+                            </li>                             
+                            <!-- <li class="nav-item">
+                                <a class="nav-link scroll" href="#pricing">Planos</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link scroll" href="#contact">Contato</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link " href="https://systfarm-painel.radocc.com">Acessar</a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- ***** Header End ***** -->
+
+        <!-- ***** Welcome Area Start ***** -->
+        <section id="home" class="section welcome-area bg-overlay d-flex align-items-center overflow-hidden">
+            <!-- <div class="shapes-container"> -->
+                <!-- <div class="bg-shape"></div> -->
+            <!-- </div> -->
+            <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <!-- Welcome Intro Start -->
+                    <div class="col-12 col-md-5">
+                        <div class="welcome-intro">
+                            <h1 class="text-white">FarmSyst<br>manejo do gado</h1>
+                            <p class="text-white my-4">
+                                O FarmSyst é a solução que pontencializa a produção da fazenda, através do controle e monitoramento das atividades. Sua fazenda organizada, e preparada no presente para o futuro. 
+                            </p>
+                            <div class="col-12 col-md-5 col-lg-6">
+                                <!-- Welcome Thumb -->
+                                <div class="welcome-thumb-play text-center mx-auto">
+                                    <!-- Play Button -->
+                                    <a class="play-btn" data-fancybox href="https://youtu.be/YFj4X3k7RxI">
+                                        <div class="btn-circle play-animation"></div>
+                                        <div class="btn-circle play-animation animation-short"></div>
+                                        <!-- Play Icon -->
+                                        <div class="play-icon">
+                                            <i class="fas fa-play"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <!-- Welcome Thumb -->
+                        <div class="welcome-thumb" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                            <img src="assets/img/screenshots/1463.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-bottom">
+                <svg fill="#fff" id="Layer_1" x="0px" y="0px" viewBox="0 0 1921 819.8" style="enable-background:new 0 0 1921 819.8;" xml:space="preserve">
+                    <path class="st0" d="M1921,413.1v406.7H0V0.5h0.4l228.1,598.3c30,74.4,80.8,130.6,152.5,168.6c107.6,57,212.1,40.7,245.7,34.4  c22.4-4.2,54.9-13.1,97.5-26.6L1921,400.5V413.1z"></path>
+                    <path class="st1" d="M1921,387.9v431.9H0V0h13l226.6,594.4c14.4,35.7,34,67.4,58.3,94.3c24.4,26.9,54.2,49.8,88.6,68.1  c50.2,26.6,105.8,40.1,165.2,40.1c36.1,0,63.6-5.2,72.6-6.9c21.6-4,53.9-12.9,96.1-26.2L1921,387.9z"></path>
+                </svg>
+            </div>
+        </section>
+        <!-- ***** Welcome Area End ***** -->
+
+        <section id="features" class="section features-area overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2>Porque adquirir o FarmSyst</h2>
+                            <p class="d-none d-sm-block mt-4">
+                                Acompanhamento e monitoramento das atividades de forma automática e precisa em único sistema.
+                            </p>
+                            <p class="d-block d-sm-none mt-4">
+                                Configure o sistema e deixe sua fazenda no piloto automático
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Features Item -->
+                        <ul class="features-item">
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.3s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/location.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Mapeamento de áreas</h3>
+                                        <p>
+                                            Faz o mapeamento e controle de cada piquete, realizando a verificação dos animais e pastagem do gado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.6s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/calendar.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Agenda de Manejos</h3>
+                                        <p>
+                                            Com a análise e acompanhamento dos piquetes autómaticos o sistema informa e organiza a sequência de manejos a ser realizado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInLeft" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/lock.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Segurança </h3>
+                                        <p>Com o rastreamento dos animais saberá a todo momento onde se encontra cada animal, e ao sairem do seu local de pastejo o sistema gera alertas para verificação.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-4 d-none d-lg-block">
+                        <!-- Featutes Thumb -->
+                        <div class="features-thumb text-center">
+                            <img src="assets/img/screenshots/positivacao.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <!-- Features Item -->
+                        <ul class="features-item">
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.3s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/support.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Customizado</h3>
+                                        <p>Configure o sistema de acordo com as atividades de sua fazenda.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.6s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/rocket.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Planejamento de Produção</h3>
+                                        <p>
+                                            Defina em cada etapa da produção as regras e atividades para aumentar a produtividade.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- Image Box -->
+                                <div class="image-box media px-1 py-3 py-md-4 wow fadeInRight" data-aos-duration="2s" data-wow-delay="0.9s">
+                                    <!-- Featured Image -->
+                                    <div class="featured-img mr-3">
+                                        <img class="avatar-sm" src="assets/img/icon/featured-img/target.png" alt="">
+                                    </div>
+                                    <!-- Icon Text -->
+                                    <div class="icon-text media-body align-self-center align-self-md-start">
+                                        <h3 class="mb-2">Metas</h3>
+                                        <p>
+                                            Estabeleça as metas e deixe o sistema realizar o controle e apontamento dos indicadores. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Features Area End ***** -->
+
+        <!-- ***** Discover Area Start ***** -->
+        <section class="section discover-area bg-gray overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <!-- Discover Thumb -->
+                        <div class="service-thumb discover-thumb mx-auto">
+                            <img src="assets/img/discover/001_EQUIPE.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                        <!-- Discover Text -->
+                        <div class="discover-text pt-4 pt-lg-0 px-0 px-lg-4">
+                            <h2 class="pb-4">Mais produtividade em sua fazenda</h2>
+                            <!-- Service List -->
+                            <ul class="service-list style-two">
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>Histórico do animal e dados sanitários de forma individual.</p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>Todas as etapas das atividades contempladas em um único sistema.</p>
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>Acompanhamento das atividades de cada animal.</p>
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>Agilidade na localização dos animais.</p>
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Eficiência no controle da alimentação e abastecimento.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Planejamento forrageiro da pastagem, e manejo rotativo do gado.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Controle o peso e tenha estimativa a de engorda.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Promova o bem estar do animal e garantirá a saúde do rebanho. 
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Discover Area End ***** -->
+
+         <!-- ***** Service Area Start ***** -->
+         <section class="section service-area bg-inherit overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                        <!-- Service Text -->
+                        <div class="service-text pt-4 pt-lg-0 px-0 px-lg-4">
+                            <h2 class="text-capitalize mb-4">Prático e seguro</h2>
+                            <!-- Service List -->
+                            <ul class="service-list style-two">
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>Coleta informações, gera relatórios e gráficos. Tudo de forma simples e fácil.
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Agilidade na criação e modificação das atividades
+                                        </p>
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Aumente a produtividade reduzindo custos. 
+                                        </p>
+                                    </div>
+                                </li>
+                                <!-- Single Service -->
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Fácil de usar com sistema hospedado na Nuvem;
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Monitora os animais em um raio de 10 km de distância
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Garantia de disponibilidade dos serviços.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="single-service py-2">
+                                    <div class="service-text">
+                                        <p>
+                                            Alertas de segurança, baseado na parametrização de monitoramento do gado.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="https://api.whatsapp.com/send?phone=5546991166766&text=&source=&data=" target="_blank" class="btn btn-bordered mt-4">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2 d-none d-md-block">
+                        <!-- Service Thumb -->
+                        <div class="service-thumb mx-auto">
+                            <img src="assets/img/screenshots/solucao.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Service Area End ***** -->
+
+        <!-- ***** Work Area Start ***** -->
+        <section class="section work-area bg-overlay overflow-hidden ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-6">
+                        <!-- Work Content -->
+                        <div class="work-content text-center">
+                            <h2 class="text-white">Como o FarmSyst funciona?</h2>
+                            <p class="text-white my-3 mt-sm-4 mb-sm-5">
+                                Através de uma sincronização entre os dispositivos dos animais com a central da fazenda as informações são enviadas para a nuvem, processadas e disponibilizado 
+                                ao gestor as informações necessárias para seu gerenciamento.  
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/download.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">Configure a plataforma web</h3>
+                            <p class="text-white">
+                                Entre em contato com nossos especialistas e configure a plataforma conforme sua necessidade    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/settings.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">Dispositivo de Monitoramento</h3>
+                            <p class="text-white">
+                                Coloque em seus animais o dispositivo de monitoramento, e o sistema será configurado automaticamente para sincronizar
+                                os dados do animal com a plataforma web
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Single Work -->
+                        <div class="single-work text-center p-3">
+                            <!-- Work Icon -->
+                            <div class="work-icon">
+                                <img class="avatar-md" src="assets/img/icon/work/app.png" alt="">
+                            </div>
+                            <h3 class="text-white py-3">Atividades</h3>
+                            <p class="text-white">
+                                Realize as atividades conforme o agendamento e planejamento das mesmas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** Work Area End ***** -->
+ 
+        <!--====== Contact Area Start ======-->
+        <section id="contact" class="contact-area bg-gray ptb_100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-6">
+                        <!-- Section Heading -->
+                        <div class="section-heading text-center">
+                            <h2 class="">Entre em contato</h2>
+                            <p class="d-none d-sm-block mt-4">Informe os dados abaixos e nossa equipe entrará em contato com você.</p>
+                            <p class="d-block d-sm-none mt-4">Informe os dados abaixos e nossa equipe entrará em contato com você.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-5">
+                        <!-- Contact Us -->
+                        <div class="contact-us">
+                            <!-- <p class="mb-3">
+                                Informe seus dados ao lado, nossa equipe responderá o mais breve possível.
+                            </p> -->
+                            <ul>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">Rua Lidio Oltramari, 1628 <br> Pato Branco - PR  </span>
+                                        
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">+55 46 99116-6766</span>
+                                    </a>
+                                </li>
+                                <li class="py-2">
+                                    <a class="media" href="#">
+                                        <div class="social-icon mr-3">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <span class="media-body align-self-center">contato@radocc.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 pt-4 pt-md-0">
+                        <!-- Contact Box -->
+                        <div class="contact-box text-center">
+                            <!-- Contact Form -->
+                            <form id="contact-form" method="POST" action="assets/php/mail.php">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Nome" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Assunto" required="required">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Mensagem" required="required"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-lg btn-block mt-3"><span class="text-white pr-3"><i class="fas fa-paper-plane"></i></span>Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p class="form-message"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== Contact Area End ======-->
+
+        <!--====== Height Emulator Area Start ======-->
+        <div class="height-emulator d-none d-lg-block"></div>
+        <!--====== Height Emulator Area End ======-->
+
+        <!--====== Footer Area Start ======-->
+        <footer class="footer-area">
+            <!-- Footer Top -->
+            <div class="footer-top ptb_100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Logo -->
+                                <a class="navbar-brand" href="#">
+                                    <img class="logo mini-logo" src="assets/img/logo/logo.webp" alt="">
+                                </a>
+                                <p class="mt-2 mb-3">
+                                    Solução que proporciona crescimento da área comercial
+                                </p>
+                                <!-- Social Icons -->
+                                <div class="social-icons d-flex">
+                                    <a class="facebook" href="https://www.facebook.com/radocc.softwares.3">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <!-- <a class="twitter" href="#">
+                                        <i class="fab fa-twitter"></i>
+                                        <i class="fab fa-twitter"></i>
+                                    </a> -->
+                                    <a class="google-plus" href="https://www.youtube.com/channel/UCaB7CRS15TzJmUiWsE7BPYQ/">
+                                        <i class="fab fa-youtube"></i>
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <!-- <a class="vine" href="#">
+                                        <i class="fab fa-vine"></i>
+                                        <i class="fab fa-vine"></i>
+                                    </a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title mb-2">Links úteis</h3>
+                                <ul>
+                                    <li class="py-2"><a href="#home">Início</a></li>
+                                    <li class="py-2"><a href="#features">Sobre</a></li>
+                                    <!-- <li class="py-2"><a href="#">Serviços</a></li> -->
+                                    <!-- <li class="py-2"><a href="#">Blog</a></li> -->
+                                    <li class="py-2"><a href="#contato">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title mb-2">Ajuda</h3>
+                                <ul>
+                                    <!-- <li class="py-2"><a href="#">FAQ</a></li> -->
+                                    <!-- <li class="py-2"><a href="#">Privacy Policy</a></li> -->
+                                    <li class="py-2"><a href="#contato">Suporte</a></li>
+                                    <!-- <li class="py-2"><a href="#">Termos e Condições</a></li> -->
+                                    <li class="py-2"><a href="#contato">Contato</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3">
+                            <!-- Footer Items -->
+                            <div class="footer-items">
+                                <!-- Footer Title -->
+                                <h3 class="footer-title mb-2">Download</h3>
+                                <!-- Store Buttons -->
+                                <div class="button-group store-buttons store-black d-flex flex-wrap">
+                                    <a href="https://play.google.com/store/apps/details?id=com.devionn.vprime" target="_blank">
+                                        <img src="assets/img/icon/google-play-black.png" alt="">
+                                    </a>
+                                    <a href="https://apps.apple.com/us/app/id1528542165" target="_blank">
+                                        <img src="assets/img/icon/app-store-black.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!-- Copyright Area -->
+                            <div class="copyright-area d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
+                                <!-- Copyright Left -->
+                                <div class="copyright-left">&copy; Copyrights 2020 todos os direitos reservados.</div>
+                                <!-- Copyright Right -->
+                                <div class="copyright-right">Desenvolvido por <a href="radocc.com">Radocc Software</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--====== Footer Area End ======--> 
+    </div>
+
+    <!-- ***** All jQuery Plugins ***** -->
+
+    <!-- jQuery(necessary for all JavaScript plugins) -->
+    <script src="assets/js/jquery/jquery-3.3.1.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap/popper.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- Plugins js -->
+    <script src="assets/js/plugins/plugins.min.js"></script>
+
+    <!-- Active js -->
+    <script src="assets/js/active.js"></script>
+
+</body>
+
+</html>
